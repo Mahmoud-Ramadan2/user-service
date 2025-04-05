@@ -2,6 +2,8 @@ package com.mahmoud.appointmentsystem.user_service.model;
 
 import jakarta.persistence.*;
 
+import java.util.Set;
+
 
 @Entity
 @Table(name = "users")
@@ -20,18 +22,20 @@ public class User {
     private String password;
 
 
-    @Enumerated(EnumType.STRING)
-    private Role role;
+    @ElementCollection(fetch = FetchType.EAGER) // Creates a Separate Table in DB
+    @Enumerated(EnumType.STRING) // Controls how enum values are stored in the database
+    private Set<Role> role;
 
     public User() {
     }
 
-    public User(String username,String email, String password, Role role) {
-        this.username = username;
-        this.email = email;
-        this.password = password;
+    public User(Set<Role> role, String password, String email, String username) {
         this.role = role;
+        this.password = password;
+        this.email = email;
+        this.username = username;
     }
+
 
     public Long getId() {
         return id;
@@ -65,11 +69,12 @@ public class User {
         this.username = username;
     }
 
-    public Role getRole() {
+
+    public Set<Role> getRole() {
         return role;
     }
 
-    public void setRole(Role role) {
+    public void setRole(Set<Role> role) {
         this.role = role;
     }
 

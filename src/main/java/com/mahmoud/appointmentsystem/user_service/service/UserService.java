@@ -20,6 +20,10 @@ public class UserService {
     public Optional<User> getUserById(Long id) {
         return userRepository.findById(id);
     }
+    public User getUserByUsername(String username) {
+        return userRepository.findByUsername(username)
+                .orElseThrow(()-> new RuntimeException("user not found"));
+    }
 
     public User createUser(User user) {
         return userRepository.save(user);
