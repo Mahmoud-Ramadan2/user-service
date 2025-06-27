@@ -12,7 +12,7 @@
 	<artifactId>user-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>user-service</name>
-	<description>Handles user authentication and management</description>
+	<description>Handles user authentication and management for doctor-appointment-system </description>
 	<url/>
 	<licenses>
 		<license/>
