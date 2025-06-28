@@ -1,0 +1,291 @@
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8761/eureka/apps/delta
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000003 preparing request execution
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000003 target auth state: UNCHALLENGED
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000003 proxy auth state: UNCHALLENGED
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000003 acquiring connection with route {}->[http://localhost:8761]
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000003 acquiring endpoint (180000 MILLISECONDS)
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000003 endpoint lease request (180000 MILLISECONDS) [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000003 endpoint leased [route: {}->[http://localhost:8761]][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.s.web.client.RestTemplate - HTTP PUT http://localhost:8761/eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000004 preparing request execution
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000004 target auth state: UNCHALLENGED
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000004 proxy auth state: UNCHALLENGED
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000004 acquiring connection with route {}->[http://localhost:8761]
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000004 acquiring endpoint (180000 MILLISECONDS)
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000004 endpoint lease request (180000 MILLISECONDS) [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000004 endpoint leased [route: {}->[http://localhost:8761]][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[read] I/O error: Read timed out"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000004 acquired ep-0000000003
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000004 acquired endpoint ep-0000000003
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000004 executing PUT /eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.protocol.RequestAddCookies - ex-0000000004 Cookie spec selected: strict
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000003 start execution ex-0000000004
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000003 executing exchange ex-0000000004 over http-outgoing-1
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> PUT /eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068 HTTP/1.1
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept: application/json, application/*+json
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:8761
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Content-Length: 0
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "PUT /eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068 HTTP/1.1[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Accept: application/json, application/*+json[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip, x-gzip, deflate[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Host: localhost:8761[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Content-Length: 0[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[read] I/O error: Read timed out"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000003 acquired ep-0000000004
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000003 acquired endpoint ep-0000000004
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000003 executing GET /eureka/apps/delta
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.protocol.RequestAddCookies - ex-0000000003 Cookie spec selected: strict
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000004 start execution ex-0000000003
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000004 executing exchange ex-0000000003 over http-outgoing-0
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /eureka/apps/delta HTTP/1.1
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:8761
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /eureka/apps/delta HTTP/1.1[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip, x-gzip, deflate[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: localhost:8761[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Length: 0[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Date: Sat, 28 Jun 2025 14:42:10 GMT[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Keep-Alive: timeout=60[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Length: 0
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Sat, 28 Jun 2025 14:42:10 GMT
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Keep-Alive: timeout=60
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Connection: keep-alive
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000004 connection can be kept alive for 60 SECONDS
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000003 releasing valid endpoint
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000003 releasing endpoint
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000003 connection http-outgoing-1 can be kept alive for 60 SECONDS
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000003 connection released [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 647[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sat, 28 Jun 2025 14:42:10 GMT[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xffffffff][0xffffffed]TMo[0xffffffe2]0[0x10][0xfffffffd]/V[0xffffff8f][0x10]b([0xffffffa5]pjE8[0xffffffa0]U[0x1][0x15][0xffffffe8]j[0xffffffb5][0xffffffaa][0xffffff90][0xffffffd7][0x19][0x1a]k[0x13];[0xffffffb2][0x1d][0xffffffba][0xffffffa8][0xffffffe2][0xffffffbf]w[0x1c][0x13][0xfffffffa][0xffffffb5][0xffffff88]t[0xffffffd5][0xffffffe3][0x1e]P[0xffffffc8][0xfffffff8][0xffffffcd]x[0xffffffe6][0xffffffcd]{y",[0xffffffcf]S[0xffffffc1][0xffffff99][0x15]J[0x1a]2x"[0x1b][0xffffffd0][0xffffffc6][0xfffffffd]_[0xffffffad]bH-#[0x3][0xffffffd2][0xf]I[0xffffffc3][0xffffffc1]0[0xffffff94]0[0xffffff93]p[0x15][0x3]F[0xffffff97][0xffffffb3]U{[0xffffffe5][0xf][0xffffffaa]|2[0xfffffff8][0xfffffff9]D$[0xffffffcb][0xffffffdc]q4[0x1d].[0xffffffa6][0xffffffb7][0xffffffcd][0xffffffeb][0xffffffd9]l:[0xffffff9e],nF[0xffffff93]Es[0xfffffffe]c[0xffffffbe][0x18][0xffffffdd]`[0xffffff8a][0xffffff90][0xffffffc6]2[0xffffffc9][0xffffffa1][0xffffffc4]W/[0xffffffe3][0x18][0xffffffb3]R[0xffffffc5]Y[0xffffff9a](c[0x7][0xffffffb1][0xffffffe2]V[0xffffffe9]&VWB[0xffffffda][0xc][0xffffffa4]m[0xffffff9a][0xffffffad][0xffffffb1][0xffffff90][\r].[0xffffffc3]K[0xffffffd7][0xffffff90]CM[0xfffffffc]][0xffffffb4][0xffffffd7][0xe][0xffffffda][0xffffff9d][0xffffff80]^[0xffffff84][0x1][0xfffffff5][0x1d][0xffffff9d]j [0xffffffbf][0xffffff8e]c[0xfffffffd]1[0x13];[0xffffffb1][0xffffff85])[0xffffff87][0xffffffc3]7[0xffffff85]Th[0x11][0xffffffc7] [0xffffffe7][0xffffff87][0xfffffff8][0xffffffe4][0xffffffdb]d[0xfffffffa]}[0xffffff82][0xffffff87][0xffffffb9][0xffffffd2][0xffffffd6][0xffffffd1]uF[0xffffffca][0xffffff86][0x1a][0xffffffe4][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "$[0xfffffffb][0xffffff95][0xffffff82][0xffffff9b][0xffffffc2][0xffffffea][0x2][0xffffffc8][0xe][0xffffffcb][0x1]/4[0xffffffcc]^[0xffffff90][0xffffffe7][0xffffffe7][0xffffff9d]7[0xffffffc0]5KM[0xffffff89][0xffffffe4][0xffffffaa][0xffffff90]Vo[0x1d][0x7][0xffffffb4]Abf[0xffffffd9][0x10]'[0x6]=[0xffffff96]k[0xffffffe5]r[0xffffffaf]x[0xffffffca][0xffffff8c]k[0xffffff80][0xffffffab],[0xffffff90]`[0xffffffd7][0xffffffa9][0xfffffff8][0x13][0xffffffe0][0xffffff9c][0x2][0xffffffcf][0xffffff83]q[0xffffffc5] [0xffffffbe][0xffffff9c]E[0xffffffb0]fEj[0xffffffa3][0xffffffb7]%[0x1a][0xffffffd5]Zn[0xffffffb6][0xffffffd3]G[0xffffffe9]nL[0xffffff81][0x19][0xffffffa8][0xffffffca]k[0xffffff90][0xfffffff0][0xffffffc8][0xffffffd2][0xffffffb1][0xffffffc3]o[0xffffffdc]s[0xe][0x1c]o[0xffffffeb][0xffffffe0]Xq[0xffffffa1][0xffffffcb][0xffffffdd]V[0xffffffb1]>[0xffffffc6]4<[0x8]c}|!2[0xffffffc0][0xffffffeb]3[0xffffffa4][0xffffff9c][0xfffffff6][0xffffffba][0xffffff94][0xffffffb6]i[0xffffffb7][0x1b]^tq[\n]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffec][0xffffffd8][0xffffffde][0xfffffffa][0xffffffc2][0x1f]A[0xffffffbd]~[0xffffffd8][0xffffffeb][0xfffffff7][0x1a][0x4]6[0xffffff82][0xffffffbf]+[0x13]:[0xffffffe2]4[0xffffffc6]a[0xffffff99][0x1f][0xffffffab][0xffffff8e][0x3]d`[0xffffff99]#[0xffffffca][0xfffffff5][0xffffff9f]1[0xffffffc9][0x1e][0xffffffc0][0xffffff89]$[0xfffffff0]{![0xffffffa5]HvN%[0x19][0xffffffcc][0xfffffff0]l[0xffffffa9]S[0xffffff8c]&[0xffffffd6][0xffffffe6][0xffffff83]V[0xffffffeb][0xfffffff5][0xffffffd6][0xffffffcb][0xffffffed][0xffffffb5][0xe][0xffffffbb][0xffffffaf][0xffffff81]e[0xffffffdc][0x16][0xc][0xffffffb5][0xffffffd9][0x12][0xffffff9e][0xffffffd9][0x4]Xj[0xffffff93]a[0x2][0xfffffffc]w[0xffffffdd]L[0xffffff9f][0xffffff82][0xffffffb9][0x1b][0xffffffaf]D(w{T[0xfffffff2][0xffffffa4][0xffffff92][0xffffffd2]]][0xffffffb8]0C[0xffffffa5]t,$[0xffffffee]H>D[0xffffffc2]p'[0xffffffe6][0xffffffed][0x1c]y[0x5]}[0x10][0xffffff9e][0xffffffdf][0xffffffd1]2G[0x1a]!~E5y[0xffffffc3][0xfffffff5][0x1e][0x16][0x9]m[0xffffffb7]G@[0xffffff9d]sg;[0xffffffbf][0xffffffc8]m[0xffffffee]tv[0x1d]E[0xffffffa3][0xffffff88][0xffffffec][0xffffffee]w[0xffffff8d][0xffffffc3][0x17]a9[0x1f][0xffffffdd]6[0xfffffff1]w7[0x1e][0xffffff8e]j~[0x4][\n]"
+2025-06-28 17:42:10 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/localhost:user-service:8081 - Heartbeat status: 200
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x14]Bs/[0x6]G![0xffffffad][0xffffffe1][0xfffffffb][0xfffffff7][0xffffffd7]|[0xffffffb5][0xffffffd5][0xffffffe9][0x7f][0xffffffab][0xffffffbf][0xffffffb8]8[0xc]i[0xffffffbf]}[0xffffffca][0xffffffea]{[0xffffffd0][0xffffffa7][0xffffffad][0xffffffee][0x13][0xffffffeb]X[0xffffff9d][0xffffffd6][0xffffffb6]:[0xfffffffd][0xffffff84][0xffffffd5][0xffffffe9]?[[0xffffff9d][0xffffff9e][0xffffffb2][0xfffffffa]ka[0xffffffff][0xffffffdd][0xffffffdd][0xffffffef][0x10]_ch[0xffffffcf][0xffffffe8][0x9]C#([0xffffffbc][0xffffffb8]<j[0xffffffe8][0xfffffffb][0xffffffdd][0xffffffee][0x19][0xffffffee][0xfffffff7][0xffffffe1][0xffffffe2]5[0x8][0x0][0x0]"
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 647
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Sat, 28 Jun 2025 14:42:10 GMT
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000003 connection can be kept alive for 60 SECONDS
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000004 releasing valid endpoint
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000004 releasing endpoint
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000004 connection http-outgoing-0 can be kept alive for 60 SECONDS
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000004 connection released [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_2_
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:doctor-appointment-system:8080 to the existing apps in region null
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:user-service:8081 to the existing apps in region null
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 2
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 2
+2025-06-28 17:42:10 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_2_, is fetching remote regions? false 
+2025-06-28 17:42:16 [http-nio-8081-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-06-28 17:42:16 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected StandardServletMultipartResolver
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected AcceptHeaderLocaleResolver
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected FixedThemeResolver
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@1054cdd9
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@6f02afde
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2025-06-28 17:42:16 [http-nio-8081-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Securing POST /auth/login
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.s.w.a.AnonymousAuthenticationFilter - Set SecurityContextHolder to anonymous SecurityContext
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.security.web.FilterChainProxy - Secured POST /auth/login
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - POST "/auth/login", parameters={}
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped to com.mahmoud.appointmentsystem.user_service.controller.AuthController#loginHandler(LoginDTO)
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Opening JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-28 17:42:16 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.RequestResponseBodyMethodProcessor - Read "application/json;charset=UTF-8" to [LoginDTO{username='aa', password='123'}]
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.sql.ast.create - Created new SQL alias : u1_0
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.sql.ast.create - Registration of TableGroup [StandardTableGroup(com.mahmoud.appointmentsystem.user_service.model.User(2))] with identifierForTableGroup [com.mahmoud.appointmentsystem.user_service.model.User] for NavigablePath [com.mahmoud.appointmentsystem.user_service.model.User] 
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG o.h.q.s.sql.BaseSqmToSqlAstConverter - Determining mapping-model type for SqmParameter : org.hibernate.query.sqm.tree.expression.SqmJpaCriteriaParameterWrapper@24b895d8
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG o.h.q.s.sql.BaseSqmToSqlAstConverter - Determining mapping-model type for SqmPath : SqmBasicValuedSimplePath(com.mahmoud.appointmentsystem.user_service.model.User(2).username) 
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.results.graph.AST - DomainResult Graph:
+ \-EntityResultImpl [com.mahmoud.appointmentsystem.user_service.model.User(2)]
+ |  +-BasicFetch [com.mahmoud.appointmentsystem.user_service.model.User(2).email]
+ |  +-BasicFetch [com.mahmoud.appointmentsystem.user_service.model.User(2).password]
+ |  +-SelectEagerCollectionFetch [com.mahmoud.appointmentsystem.user_service.model.User(2).role]
+ |  \-BasicFetch [com.mahmoud.appointmentsystem.user_service.model.User(2).username]
+
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.sql.ast.tree - SQL AST Tree:
+    SelectStatement {
+      FromClause {
+        StandardTableGroup (u1 : com.mahmoud.appointmentsystem.user_service.model.User(2)) {
+          primaryTableReference : users as u1_0
+        }
+      }
+    }
+
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = NORMAL
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        u1_0.id,
+        u1_0.email,
+        u1_0.password,
+        u1_0.username 
+    from
+        users u1_0 
+    where
+        u1_0.username=?
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.mahmoud.appointmentsystem.user_service.model.User(2) -> EntityJoinedFetchInitializer(com.mahmoud.appointmentsystem.user_service.model.User(2))@2106468515 (SingleTableEntityPersister(com.mahmoud.appointmentsystem.user_service.model.User))
+	  com.mahmoud.appointmentsystem.user_service.model.User(2).role -> SelectEagerCollectionInitializer(com.mahmoud.appointmentsystem.user_service.model.User(2).role)@1470647954 (PluralAttribute(com.mahmoud.appointmentsystem.user_service.model.User.role))
+
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.sql.exec - Skipping reading Query result cache data: cache-enabled = false, cache-mode = IGNORE
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.SQL - 
+    select
+        r1_0.user_id,
+        r1_0.role 
+    from
+        user_role r1_0 
+    where
+        r1_0.user_id=?
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG org.hibernate.orm.results - Initializer list:
+	  com.mahmoud.appointmentsystem.user_service.model.User.role -> SetInitializer(com.mahmoud.appointmentsystem.user_service.model.User.role)@2005333693 (PluralAttribute(com.mahmoud.appointmentsystem.user_service.model.User.role))
+
+2025-06-28 17:42:19 [http-nio-8081-exec-1] DEBUG o.h.s.results.internal.ResultsHelper - Collection fully initialized: [com.mahmoud.appointmentsystem.user_service.model.User.role#1]
+2025-06-28 17:42:20 [http-nio-8081-exec-1] DEBUG o.s.s.a.d.DaoAuthenticationProvider - Authenticated user
+2025-06-28 17:42:20 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Using 'application/json', given [*/*] and supported [application/json, application/*+json]
+2025-06-28 17:42:20 [http-nio-8081-exec-1] DEBUG o.s.w.s.m.m.a.HttpEntityMethodProcessor - Writing [{jwt-token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJVc2VyX0RldGFpbHMiLCJyb2xlcyI6WyJST0xFX0FE (truncated)...]
+2025-06-28 17:42:20 [http-nio-8081-exec-1] DEBUG o.s.o.j.s.OpenEntityManagerInViewInterceptor - Closing JPA EntityManager in OpenEntityManagerInViewInterceptor
+2025-06-28 17:42:20 [http-nio-8081-exec-1] DEBUG o.s.web.servlet.DispatcherServlet - Completed 200 OK
+2025-06-28 17:42:32 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+2025-06-28 17:42:32 [HikariPool-1 housekeeper] DEBUG com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Fill pool skipped, pool has sufficient level or currently being filled.
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - HTTP GET http://localhost:8761/eureka/apps/delta
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.s.web.client.RestTemplate - HTTP PUT http://localhost:8761/eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.s.web.client.RestTemplate - Accept=[application/json, application/*+json]
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000005 preparing request execution
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000006 preparing request execution
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000005 target auth state: UNCHALLENGED
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000005 proxy auth state: UNCHALLENGED
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000005 acquiring connection with route {}->[http://localhost:8761]
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000005 acquiring endpoint (180000 MILLISECONDS)
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000005 endpoint lease request (180000 MILLISECONDS) [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000005 endpoint leased [route: {}->[http://localhost:8761]][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000006 target auth state: UNCHALLENGED
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ProtocolExec - ex-0000000006 proxy auth state: UNCHALLENGED
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.impl.classic.ConnectExec - ex-0000000006 acquiring connection with route {}->[http://localhost:8761]
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000006 acquiring endpoint (180000 MILLISECONDS)
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000006 endpoint lease request (180000 MILLISECONDS) [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000006 endpoint leased [route: {}->[http://localhost:8761]][total available: 0; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[read] I/O error: Read timed out"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[read] I/O error: Read timed out"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000006 acquired ep-0000000005
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ex-0000000005 acquired ep-0000000006
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000006 acquired endpoint ep-0000000005
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ex-0000000005 acquired endpoint ep-0000000006
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000005 executing GET /eureka/apps/delta
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000006 executing PUT /eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.protocol.RequestAddCookies - ex-0000000006 Cookie spec selected: strict
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.protocol.RequestAddCookies - ex-0000000005 Cookie spec selected: strict
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000005 start execution ex-0000000006
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000006 start execution ex-0000000005
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000005 executing exchange ex-0000000006 over http-outgoing-1
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000006 executing exchange ex-0000000005 over http-outgoing-0
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> GET /eureka/apps/delta HTTP/1.1
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> PUT /eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068 HTTP/1.1
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept: application/json, application/*+json
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept: application/json, application/*+json
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Accept-Encoding: gzip, x-gzip, deflate
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Accept-Encoding: gzip, x-gzip, deflate
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Host: localhost:8761
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Host: localhost:8761
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> Connection: keep-alive
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Content-Length: 0
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 >> User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> Connection: keep-alive
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 >> User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "GET /eureka/apps/delta HTTP/1.1[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Accept: application/json, application/*+json[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "PUT /eureka/apps/USER-SERVICE/localhost:user-service:8081?status=UP&lastDirtyTimestamp=1751121700068 HTTP/1.1[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Accept-Encoding: gzip, x-gzip, deflate[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Accept: application/json, application/*+json[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Host: localhost:8761[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Accept-Encoding: gzip, x-gzip, deflate[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Host: localhost:8761[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 >> "[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Content-Length: 0[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "User-Agent: Apache-HttpClient/5.4.2 (Java/21.0.7)[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 >> "[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "HTTP/1.1 200 [\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Encoding: gzip[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Type: application/json[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Content-Length: 647[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "HTTP/1.1 200 [\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Date: Sat, 28 Jun 2025 14:42:40 GMT[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Content-Length: 0[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Date: Sat, 28 Jun 2025 14:42:40 GMT[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Keep-Alive: timeout=60[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Keep-Alive: timeout=60[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "Connection: keep-alive[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-1 << "[\r][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x1f][0xffffff8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0xffffffff][0xffffffed]TMo[0xffffffe2]0[0x10][0xfffffffd]/V[0xffffff8f][0x10]b([0xffffffa5]pjE8[0xffffffa0]U[0x1][0x15][0xffffffe8]j[0xffffffb5][0xffffffaa][0xffffff90][0xffffffd7][0x19][0x1a]k[0x13];[0xffffffb2][0x1d][0xffffffba][0xffffffa8][0xffffffe2][0xffffffbf]w[0x1c][0x13][0xfffffffa][0xffffffb5][0xffffff88]t[0xffffffd5][0xffffffe3][0x1e]P[0xffffffc8][0xfffffff8][0xffffffcd]x[0xffffffe6][0xffffffcd]{y",[0xffffffcf]S[0xffffffc1][0xffffff99][0x15]J[0x1a]2x"[0x1b][0xffffffd0][0xffffffc6][0xfffffffd]_[0xffffffad]bH-#[0x3][0xffffffd2][0xf]I[0xffffffc3][0xffffffc1]0[0xffffff94]0[0xffffff93]p[0x15][0x3]F[0xffffff97][0xffffffb3]U{[0xffffffe5][0xf][0xffffffaa]|2[0xfffffff8][0xfffffff9]D$[0xffffffcb][0xffffffdc]q4[0x1d].[0xffffffa6][0xffffffb7][0xffffffcd][0xffffffeb][0xffffffd9]l:[0xffffff9e],nF[0xffffff93]Es[0xfffffffe]c[0xffffffbe][0x18][0xffffffdd]`[0xffffff8a][0xffffff90][0xffffffc6]2[0xffffffc9][0xffffffa1][0xffffffc4]W/[0xffffffe3][0x18][0xffffffb3]R[0xffffffc5]Y[0xffffff9a](c[0x7][0xffffffb1][0xffffffe2]V[0xffffffe9]&VWB[0xffffffda][0xc][0xffffffa4]m[0xffffff9a][0xffffffad][0xffffffb1][0xffffff90][\r].[0xffffffc3]K[0xffffffd7][0xffffff90]CM[0xfffffffc]][0xffffffb4][0xffffffd7][0xe][0xffffffda][0xffffff9d][0xffffff80]^[0xffffff84][0x1][0xfffffff5][0x1d][0xffffff9d]j [0xffffffbf][0xffffff8e]c[0xfffffffd]1[0x13];[0xffffffb1][0xffffff85])[0xffffff87][0xffffffc3]7[0xffffff85]Th[0x11][0xffffffc7] [0xffffffe7][0xffffff87][0xfffffff8][0xffffffe4][0xffffffdb]d[0xfffffffa]}[0xffffff82][0xffffff87][0xffffffb9][0xffffffd2][0xffffffd6][0xffffffd1]uF[0xffffffca][0xffffff86][0x1a][0xffffffe4][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "$[0xfffffffb][0xffffff95][0xffffff82][0xffffff9b][0xffffffc2][0xffffffea][0x2][0xffffffc8][0xe][0xffffffcb][0x1]/4[0xffffffcc]^[0xffffff90][0xffffffe7][0xffffffe7][0xffffff9d]7[0xffffffc0]5KM[0xffffff89][0xffffffe4][0xffffffaa][0xffffff90]Vo[0x1d][0x7][0xffffffb4]Abf[0xffffffd9][0x10]'[0x6]=[0xffffff96]k[0xffffffe5]r[0xffffffaf]x[0xffffffca][0xffffff8c]k[0xffffff80][0xffffffab],[0xffffff90]`[0xffffffd7][0xffffffa9][0xfffffff8][0x13][0xffffffe0][0xffffff9c][0x2][0xffffffcf][0xffffff83]q[0xffffffc5] [0xffffffbe][0xffffff9c]E[0xffffffb0]fEj[0xffffffa3][0xffffffb7]%[0x1a][0xffffffd5]Zn[0xffffffb6][0xffffffd3]G[0xffffffe9]nL[0xffffff81][0x19][0xffffffa8][0xffffffca]k[0xffffff90][0xfffffff0][0xffffffc8][0xffffffd2][0xffffffb1][0xffffffc3]o[0xffffffdc]s[0xe][0x1c]o[0xffffffeb][0xffffffe0]Xq[0xffffffa1][0xffffffcb][0xffffffdd]V[0xffffffb1]>[0xffffffc6]4<[0x8]c}|!2[0xffffffc0][0xffffffeb]3[0xffffffa4][0xffffff9c][0xfffffff6][0xffffffba][0xffffff94][0xffffffb6]i[0xffffffb7][0x1b]^tq[\n]"
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0xffffffec][0xffffffd8][0xffffffde][0xfffffffa][0xffffffc2][0x1f]A[0xffffffbd]~[0xffffffd8][0xffffffeb][0xfffffff7][0x1a][0x4]6[0xffffff82][0xffffffbf]+[0x13]:[0xffffffe2]4[0xffffffc6]a[0xffffff99][0x1f][0xffffffab][0xffffff8e][0x3]d`[0xffffff99]#[0xffffffca][0xfffffff5][0xffffff9f]1[0xffffffc9][0x1e][0xffffffc0][0xffffff89]$[0xfffffff0]{![0xffffffa5]HvN%[0x19][0xffffffcc][0xfffffff0]l[0xffffffa9]S[0xffffff8c]&[0xffffffd6][0xffffffe6][0xffffff83]V[0xffffffeb][0xfffffff5][0xffffffd6][0xffffffcb][0xffffffed][0xffffffb5][0xe][0xffffffbb][0xffffffaf][0xffffff81]e[0xffffffdc][0x16][0xc][0xffffffb5][0xffffffd9][0x12][0xffffff9e][0xffffffd9][0x4]Xj[0xffffff93]a[0x2][0xfffffffc]w[0xffffffdd]L[0xffffff9f][0xffffff82][0xffffffb9][0x1b][0xffffffaf]D(w{T[0xfffffff2][0xffffffa4][0xffffff92][0xffffffd2]]][0xffffffb8]0C[0xffffffa5]t,$[0xffffffee]H>D[0xffffffc2]p'[0xffffffe6][0xffffffed][0x1c]y[0x5]}[0x10][0xffffff9e][0xffffffdf][0xffffffd1]2G[0x1a]!~E5y[0xffffffc3][0xfffffff5][0x1e][0x16][0x9]m[0xffffffb7]G@[0xffffff9d]sg;[0xffffffbf][0xffffffc8]m[0xffffffee]tv[0x1d]E[0xffffffa3][0xffffff88][0xffffffec][0xffffffee]w[0xffffff8d][0xffffffc3][0x17]a9[0x1f][0xffffffdd]6[0xfffffff1]w7[0x1e][0xffffff8e]j~[0x4][\n]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << HTTP/1.1 200 
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.wire - http-outgoing-0 << "[0x14]Bs/[0x6]G![0xffffffad][0xffffffe1][0xfffffffb][0xfffffff7][0xffffffd7]|[0xffffffb5][0xffffffd5][0xffffffe9][0x7f][0xffffffab][0xffffffbf][0xffffffb8]8[0xc]i[0xffffffbf]}[0xffffffca][0xffffffea]{[0xffffffd0][0xffffffa7][0xffffffad][0xffffffee][0x13][0xffffffeb]X[0xffffff9d][0xffffffd6][0xffffffb6]:[0xfffffffd][0xffffff84][0xffffffd5][0xffffffe9]?[[0xffffff9d][0xffffff9e][0xffffffb2][0xfffffffa]ka[0xffffffff][0xffffffdd][0xffffffdd][0xffffffef][0x10]_ch[0xffffffcf][0xffffffe8][0x9]C#([0xffffffbc][0xffffffb8]<j[0xffffffe8][0xfffffffb][0xffffffdd][0xffffffee][0x19][0xffffffee][0xfffffff7][0xffffffe1][0xffffffe2]5[0x8][0x0][0x0]"
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Content-Length: 0
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Date: Sat, 28 Jun 2025 14:42:40 GMT
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Keep-Alive: timeout=60
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-1 << Connection: keep-alive
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << HTTP/1.1 200 
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Encoding: gzip
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Type: application/json
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Content-Length: 647
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Date: Sat, 28 Jun 2025 14:42:40 GMT
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Keep-Alive: timeout=60
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG org.apache.hc.client5.http.headers - http-outgoing-0 << Connection: keep-alive
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000006 connection can be kept alive for 60 SECONDS
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.classic.MainClientExec - ex-0000000005 connection can be kept alive for 60 SECONDS
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - Response 200 OK
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000005 releasing valid endpoint
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.s.web.client.RestTemplate - Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000005 releasing endpoint
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000005 connection http-outgoing-1 can be kept alive for 60 SECONDS
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000005 connection released [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:40 [DiscoveryClient-HeartbeatExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - DiscoveryClient_USER-SERVICE/localhost:user-service:8081 - Heartbeat status: 200
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.c.InternalHttpClient - ep-0000000006 releasing valid endpoint
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000006 releasing endpoint
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000006 connection http-outgoing-0 can be kept alive for 60 SECONDS
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG o.a.h.c.h.i.i.PoolingHttpClientConnectionManager - ep-0000000006 connection released [route: {}->[http://localhost:8761]][total available: 1; route allocated: 1 of 5; total allocated: 1 of 25]
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Got delta update with apps hashcode UP_2_
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:doctor-appointment-system:8080 to the existing apps in region null
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Added instance localhost:user-service:8081 to the existing apps in region null
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - The total number of instances fetched by the delta processor : 2
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - The total number of all instances in the client now is 2
+2025-06-28 17:42:40 [DiscoveryClient-CacheRefreshExecutor-%d] DEBUG c.netflix.discovery.DiscoveryClient - Completed cache refresh task for discovery. All Apps hash code is Local region apps hashcode: UP_2_, is fetching remote regions? false 
