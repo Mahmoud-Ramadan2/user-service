@@ -14,6 +14,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.*;
 import org.mockito.junit.jupiter.MockitoExtension;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,7 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.test.context.TestPropertySource;
 
 import java.util.Collections;
 import java.util.Map;
@@ -32,9 +34,14 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
+/**
+ *
+ *
+ */
 @ExtendWith(MockitoExtension.class)
 @DisplayName("AuthController Tests")
 class AuthControllerTest {
+
     @Mock
     UserService userService;
     @Mock
@@ -55,16 +62,16 @@ class AuthControllerTest {
     ArgumentCaptor<UsernamePasswordAuthenticationToken> authenticationCaptor;
 
 
-
-
     @Nested
     @DisplayName("Registration Tests")
     class RegistrationTests {
 
 
-
         private RegisterDTO registerDTO;
 
+        /**
+         * @throws Exception
+         */
         @Test
         @DisplayName("When valid data is provided, it should return a JWT token")
         void register_WithValidData_ReturnsJwtToken() throws Exception {
@@ -159,6 +166,7 @@ class AuthControllerTest {
 
 
     }
+
     @Nested
     @DisplayName("Login Tests")
     class LoginTests {
@@ -182,10 +190,9 @@ class AuthControllerTest {
             user.setRole(Set.of(Role.ROLE_PATIENT));
 
             // Mock authentication and JWT generation
+
             Authentication mockAuthentication = mock(Authentication.class);
-            when(authManager.authenticate(any())).thenReturn(mockAuthentication);
-            when(mockAuthentication.getPrincipal()).thenReturn(user);
-            when(mockAuthentication.getAuthorities()).thenReturn(Collections.emptySet());
+            when(authManager.authenticate(new UsernamePasswordAuthenticationToken(username, password))).thenReturn(mockAuthentication);
 
             when(jwtUtil.generateToken(eq(username), any())).thenReturn("jwtToken");
 

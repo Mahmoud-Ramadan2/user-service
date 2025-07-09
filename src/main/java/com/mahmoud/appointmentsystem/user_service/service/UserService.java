@@ -1,5 +1,6 @@
 package com.mahmoud.appointmentsystem.user_service.service;
 
+import com.mahmoud.appointmentsystem.user_service.exception.UserNotFoundException;
 import com.mahmoud.appointmentsystem.user_service.model.User;
 import com.mahmoud.appointmentsystem.user_service.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,7 @@ public class UserService {
     }
     public User getUserByUsername(String username) {
         return userRepository.findByUsername(username)
-                .orElseThrow(()-> new RuntimeException("user not found"));
+                .orElseThrow(()-> new UserNotFoundException("user not found"));
     }
 
     public User createUser(User user) {
