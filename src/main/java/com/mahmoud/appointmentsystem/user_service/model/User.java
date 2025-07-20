@@ -26,6 +26,8 @@ public class User {
     @Enumerated(EnumType.STRING) // Controls how enum values are stored in the database
     private Set<Role> role;
 
+
+
     public User() {
     }
 
@@ -77,6 +79,8 @@ public class User {
     public void setRole(Set<Role> role) {
         this.role = role;
     }
+
+
 
     @Override
     public String toString() {

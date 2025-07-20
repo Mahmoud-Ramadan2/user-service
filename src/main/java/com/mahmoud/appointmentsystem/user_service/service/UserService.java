@@ -26,6 +26,20 @@ public class UserService {
                 .orElseThrow(()-> new UserNotFoundException("user not found"));
     }
 
+    public Optional<User> getUserByEmail(String email) {
+        return userRepository.findByEmail(email);
+    }
+
+    public Boolean existsByEmail(String email) {
+        return userRepository.existsByEmail(email);
+    }
+
+    public void updatePassword(User user, String newPassword) {
+        user.setPassword(newPassword);
+        userRepository.save(user);
+    }
+
+
     public User createUser(User user) {
         return userRepository.save(user);
     }
