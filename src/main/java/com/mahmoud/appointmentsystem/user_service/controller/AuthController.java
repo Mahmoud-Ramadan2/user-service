@@ -31,7 +31,7 @@ import java.util.*;
  * It provides endpoints for registration, login, password reset, and forgot password functionality
  */
 @RestController
-@RequestMapping("/auth")
+@RequestMapping("/users/auth")
 public class AuthController {
     @Autowired
     private AuthenticationManager authManager;
