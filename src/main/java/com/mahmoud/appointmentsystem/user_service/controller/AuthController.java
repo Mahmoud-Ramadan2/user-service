@@ -172,7 +172,7 @@ public class AuthController {
         resetToken.setToken(token);
         resetToken.setExpiryDate(LocalDateTime.now().plusMinutes(3)); // Token valid for 3 minutes
         tokenService.createToken(resetToken);
-        String link = "http://localhost:8081/auth/reset-password?token=" + token;  // frontend link to reset password
+        String link = "http://localhost:8080/users/auth/reset-password?token=" + token;  // frontend link to reset password
         String subject = "Password Reset Request";
         String body = "Click the link to reset your password: " + link;
         // Send email with the reset link
