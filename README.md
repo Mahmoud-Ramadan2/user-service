@@ -1,52 +1,57 @@
 
 # User Service - Doctor Appointment System
 
-The **User Service** is a core microservice in the *Doctor Appointment System*, responsible for handling user registration, authentication, authorization,password reset, and user profile management. It integrates with Eureka for service discovery and uses JWT for secure access control.
+The **User Service** is a core microservice in the * Appointment System*, responsible for handling user registration, authentication, authorization, password reset, and user profile management. It integrates with Eureka for service discovery and uses JWT for secure access control.
 
 ---
 
-## ? Tech Stack
+##  Tech Stack
 
 - **Java 21**
 - **Spring Boot 3.4.4**
+- **Spring Cloud Version**: `2024.0.1`
 - **Spring Data JPA**
 - **Spring Security + JWT**
 - **MySQL**
+- **gateway service**
 - **Eureka Client**
+- **OpenFeign**
 - **JUnit 5 + Mockito**
 
 ---
 
-## ? Features
+##  Features
 
-- ? User registration and login
-- ? JWT-based authentication and role-based authorization
-- ? Email service using SMTP (e.g., for account verification or password reset)
-- ? Eureka integration for service discovery
-- ? Actuator for monitoring and health checks
-- ? Hibernate ORM with automatic schema update
+-  User registration and login
+-  JWT-based authentication and role-based authorization
+-  Email service using SMTP (e.g., for password reset)
+- - gateway for single entry point, routing and load balancing via Eureka
+-  Eureka integration for service discovery
+-  Actuator for monitoring and health checks
+-  Hibernate ORM with automatic schema update
 
 ---
 
-## ? Project Structure
+##  Project Structure
 
 ```
 user-service/
-?
-??? src/
-?   ??? main/
-?   ?   ??? java/com/mahmoud/appointmentsystem/user/   # Core business logic
-?   ?   ??? resources/
-?   ?       ??? application.properties                  # Configuration
-?   ??? test/                                           # Unit and integration tests
-??? pom.xml
-??? README.md
-??? x.env
+
+    src/
+        main/
+            java/com/mahmoud/appointmentsystem/user_service/   # Core business logic
+            resources/
+                application.properties                  # Configuration
+                logback-spring.xml                      # Logging Configuration
+        test/                                           # Unit and integration tests
+    pom.xml
+    README.md
+    x.env
 ```
 
 ---
 
-## ?? Configuration
+##  Configuration
 
 ### `application.properties`
 
@@ -54,7 +59,7 @@ user-service/
 # Service Identity
 All sensitive and dynamic values are managed using a `.env` file.
 
-### ? Sample `.env`
+###  Sample `.env`
 
 ```dotenv
 SPRING_APPLICATION_NAME=user-service
@@ -89,18 +94,26 @@ SPRING_PROFILES_ACTIVE=dev
 ```
 
 ---
+##  Logging
 
-## ? Security
+-  Structured Logging using **SLF4J** + **Logback**
+    - Configurable via `logback-spring.xml`
+    - Supports profile-specific logging behavior
+    - Optional: rolling log files, separate logs per environment, colored console output
+
+
+##  Security
 
 The service uses `spring-security` combined with `java-jwt` for:
 
 - Generating secure access tokens after successful login
 - Validating tokens for protected routes
 - Role-based access control for user/admin
+- Password reset via mail link if mail exists
 
 ---
 
-## ? Testing
+##  Testing
 
 - Uses **JUnit 5** for unit testing
 - Uses **Mockito** for mocking service dependencies
@@ -108,7 +121,7 @@ The service uses `spring-security` combined with `java-jwt` for:
 
 ---
 
-## ? Dependencies Overview (from `pom.xml`)
+##  Dependencies Overview (from `pom.xml`)
 
 | Purpose                | Library                               |
 |------------------------|----------------------------------------|
@@ -125,7 +138,7 @@ The service uses `spring-security` combined with `java-jwt` for:
 
 ---
 
-## ? Running the Service
+##  Running the Service
 
 ### Prerequisites
 
@@ -133,12 +146,16 @@ The service uses `spring-security` combined with `java-jwt` for:
 - Maven
 - MySQL running on `localhost:3306` with DB named `doctor_appointment`
 - Eureka server running on port `8761`
+- gateway service running on port `8080`
+- appointment service running on port `8082`
 
 ### Start Order
 
 1. **Eureka Server**
-2. **User Service**
-3. Other services (e.g., appointment service)
+2. **gateway service** 
+3. **User Service**
+4. **Appointment Service**
+5. Other services
 
 ### Run via Maven:
 
@@ -148,26 +165,27 @@ mvn clean spring-boot:run
 
 ---
 
-## ? Eureka & Appointment Service Integration
+##  Eureka & Appointment Service Integration
 
-| Service                | Port   |
-|------------------------|--------|
-| Eureka Server          | `8761` |
-| User Service           | `8081` |
-| Appointment Service    | `8080` (example) |
+| Service             | Port   |
+|---------------------|--------|
+| Eureka Server       | `8761` |
+| User Service        | `8081` |
+| Appointment Service | `8082` |
+| gateway service     | `8080` |
 
 All services register with Eureka for load-balanced inter-service communication.
 
 ---
 
-## ?? Author
+##  Author
 
 **Mahmoud Ramadan**  
 Email: [mahmoudramadan385@gmail.com](mailto:mahmoudramadan385@gmail.com)
 
 ---
 
-## ?? License
+##  License
 
 This project is licensed under a proprietary license. For use or redistribution, contact the author.
 
