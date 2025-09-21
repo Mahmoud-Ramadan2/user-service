@@ -5,8 +5,8 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.4.4</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<version>3.4.5</version>
+		<relativePath/>
 	</parent>
 	<groupId>com.mahmoud.appointmentsystem</groupId>
 	<artifactId>user-service</artifactId>
@@ -147,5 +147,15 @@
 			</plugin>
 		</plugins>
 	</build>
-
+	<!--    this added because of Eureka artifacts are not in Maven Central.-->
+	<repositories>
+		<repository>
+			<id>spring-releases</id>
+			<url>https://repo.spring.io/release</url>
+		</repository>
+		<repository>
+			<id>spring-milestones</id>
+			<url>https://repo.spring.io/milestone</url>
+		</repository>
+	</repositories>
 </project>
