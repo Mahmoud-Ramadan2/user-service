@@ -4,9 +4,15 @@
        TRACE < DEBUG < INFO < WARN < ERROR-->
 
 <configuration>
+    <!-- Add Spring Boot's color converters -->
+    <conversionRule conversionWord="clr" converterClass="org.springframework.boot.logging.logback.ColorConverter"/>
+    <conversionRule conversionWord="wex" converterClass="org.springframework.boot.logging.logback.WhitespaceThrowableProxyConverter"/>
+    <conversionRule conversionWord="wEx" converterClass="org.springframework.boot.logging.logback.ExtendedWhitespaceThrowableProxyConverter"/>
 
     <!-- Common pattern -->
-    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"/>
+    <property name="LOG_PATTERN"
+              value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %clr(%-5level) %clr(%logger{36}){cyan} - %msg%n"/>
+
     <property name="LOG_FILE" value="logs/doctor-app-logs.log"/>
 
     <!-- ========================= -->
