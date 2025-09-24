@@ -1,6 +1,7 @@
 package com.mahmoud.appointmentsystem.user_service.controller;
 
 
+    import com.mahmoud.appointmentsystem.user_service.DTO.UserDTO;
     import com.mahmoud.appointmentsystem.user_service.model.User;
 import com.mahmoud.appointmentsystem.user_service.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,8 @@ public class UserController {
     }
 
     @GetMapping("/{id}")
-    public Optional<User> getUserById(@PathVariable Long id) {
+    public UserDTO getUserById(@PathVariable Long id) {
+
         return userService.getUserById(id);
     }
     @PostMapping
