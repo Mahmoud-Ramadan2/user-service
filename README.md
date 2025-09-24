@@ -8,7 +8,7 @@ The **User Service** is a core microservice in the * Appointment System*, respon
 ##  Tech Stack
 
 - **Java 21**
-- **Spring Boot 3.4.4**
+- **Spring Boot 3.4.5**
 - **Spring Cloud Version**: `2024.0.1`
 - **Spring Data JPA**
 - **Spring Security + JWT**
@@ -155,7 +155,8 @@ The service uses `spring-security` combined with `java-jwt` for:
 2. **gateway service** 
 3. **User Service**
 4. **Appointment Service**
-5. Other services
+5. **Notification Service**
+6. other services
 
 ### Run via Maven:
 
@@ -167,12 +168,13 @@ mvn clean spring-boot:run
 
 ##  Eureka & Appointment Service Integration
 
-| Service             | Port   |
-|---------------------|--------|
-| Eureka Server       | `8761` |
-| User Service        | `8081` |
-| Appointment Service | `8082` |
-| gateway service     | `8080` |
+| Service              | Port   |
+|----------------------|--------|
+| Eureka Server        | `8761` |
+| User Service         | `8081` |
+| Appointment Service  | `8082` |
+| Notification Service | `8083` |
+| gateway service      | `8080` |
 
 All services register with Eureka for load-balanced inter-service communication.
 
